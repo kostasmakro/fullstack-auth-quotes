@@ -8,7 +8,7 @@ router.get("/random", requireAuth, async (req, res) => {
     // ZenQuotes random endpoint
     const response = await fetch("https://zenquotes.io/api/random");
     if (!response.ok) {
-      return res.status(502).json({ error: "Failed to fetch quote" });
+      return res.status(502).json({ error: "Failed to fetch quote/Reached quote limit" });
     }
 
     const data = await response.json();

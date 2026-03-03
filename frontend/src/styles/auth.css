@@ -1,0 +1,156 @@
+:root{
+  --primary: #A47DAB;
+  --bg: #f3f3f3;
+  --card: #ffffff;
+  --text: #333;
+  --muted: #666;
+  --border: #ddd;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: var(--bg);
+  flex-direction: column;
+  margin: 0;
+  color: var(--text);
+}
+
+.main {
+  background-color: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.12);
+  padding: 18px 22px;
+  width: 460px;
+  max-width: 92vw;
+  text-align: center;
+}
+
+.brand {
+  color: var(--primary);
+  margin: 0 0 6px;
+  font-size: 34px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  text-align: left;
+  color: #555;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(164,125,171,0.18);
+}
+
+button {
+  padding: 13px 14px;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: var(--primary);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.linkRow {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.linkRow a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.error {
+  background: #ffe8ea;
+  color: #8a1f2a;
+  border: 1px solid #f2b8bf;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.success {
+  background: #e9fff0;
+  color: #1f6b38;
+  border: 1px solid #b6ebc5;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Quotes page extras */
+.quoteBox {
+  margin-top: 10px;
+  background: #fbf8fc;
+  border: 1px solid rgba(164,125,171,0.25);
+  padding: 16px;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.quoteText {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.quoteAuthor {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+.topRow {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.smallBtn {
+  width: auto;
+  padding: 10px 12px;
+  font-size: 14px;
+}
